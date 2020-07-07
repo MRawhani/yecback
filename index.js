@@ -22,7 +22,7 @@ process.on("unhandledRejection", function (ex) {
 const Schema = mongoose.Schema;
 
 mongoose
-  .connect(config.DB_URI, {
+  .connect(config.DB_URI2, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
