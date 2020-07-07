@@ -119,13 +119,6 @@ app.use(
 
 app.use(Error);
 
-if (process.env.NODE_ENV === "production") {
-  const appPath = path.join(__dirname, "..", "build");
-  app.use(express.static(appPath));
-  app.get("*", function (req, res) {
-    res.sendFile(path.resolve(appPath, "index.html"));
-  });
-}
 const PORT = process.env.PORT || 3006;
 app.listen(PORT, () => {
   console.log("Running");
