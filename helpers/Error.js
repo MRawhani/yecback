@@ -1,4 +1,4 @@
-const MongooseErrHandler = require("./helpers/MongooseErrHandler");
+const MongooseErrHandler = require("./MongooseErrHandler");
 
 module.exports = function(err, req, res, next) {
  
